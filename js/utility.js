@@ -38,13 +38,22 @@ document.getElementById('donate-now-btn')
             const getCurrentDonationAmount = document.getElementById('get-current-amount').innerText;
             const getCurrentDonationAmountP = parseFloat(getCurrentDonationAmount)
             const B = getCurrentDonationAmountP - inputValueAmountP;
+            
+            const historyDetails =  document.getElementById('history-form')
+           historyDetails.append(div);
             if (B <= 0) {
                 alert('Do not enough Balance! Please earn Money.')
             }
 
             document.getElementById('get-current-amount').innerText = B
-
-
+            // history set----------------------------------------------
+            const div = document.createElement('div')
+            div.innerHTML = `
+            <h1 class = font-bold text-xl mb-4>${newBalance} Taka is Donated for Flood at Noakhali, Bangladesh </h1>
+            <p>Date:${new Date}</p>
+            `
+            console.log(div)
+           
         }
         else {
             alert('Validate the donation amount!')
@@ -53,7 +62,7 @@ document.getElementById('donate-now-btn')
         document.getElementById('close-config')
             .addEventListener('click', function () {
                 document.getElementById('Congrates-form').classList.add('hidden')
-
+                
             })
 
     })
