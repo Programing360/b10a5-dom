@@ -21,8 +21,8 @@
 </head>
 
 <body class="lexend-font">
-    <header class=" mb-32 z-50 fixed w-full">
-        <nav class="bg-opacity-60">
+    <header class=" mb-10 z-50 fixed w-full">
+        <nav class="bg-opacity-60 backdrop-blur-md">
             <div class="navbar flex justify-between items-center bg-[#f9f7f3fd] pt-9 pb-8 lg:pl-32 ">
                 <button id="blog-btn" class="btn lg:px-8 text-xl bg-lime-500">Blog</button>
                 <button id="home-btn" class="btn lg:px-8 text-xl bg-lime-500 hidden">Home</button>
@@ -33,11 +33,11 @@
                 </div>
                 <div class="lg:pr-32">
                     <img src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">
-                    <h3><span id="get-current-amount">5500</span>BDT</h3>
+                    <h3 class="ml-2"><span id="get-current-amount">5500</span> BDT</h3>
                 </div>
             </div>
             <!-- Donation & History Btn -->
-            <div id="navbar" class="flex justify-center gap-3 mt-14 ">
+            <div id="navbar" class="flex justify-center gap-3 mt-7 ">
                 <button id="donation-btn" class="border-2 px-10 py-4 rounded-lg ">Donation</button>
                 <button id="history-btn" class="border-2 px-10 py-4 rounded-lg">History</button>
             </div>
@@ -45,7 +45,7 @@
         </nav>
         <div class="divider"></div>
     </header>
-    <main id="donation-form" class="container lg:mx-32 mt-96 absolute">
+    <main id="donation-form" class="container lg:mx-32 mt-72 absolute">
         <!-- donation card - 1 -->
         <section class=" border-2 p-8 ">
             <div class="card flex lg:flex-row md:flex-row sm:flex-col bg-base-100 shadow-xl">
@@ -72,47 +72,47 @@
             </div>
         </section>
         <!-- donation card -2 -->
-        <section class="mt-14 border-2 p-8 ">
+        <section class="mt-6 border-2 p-8 ">
             <div class="card flex lg:flex-row md:flex-row sm:flex-col bg-base-100 shadow-xl">
                 <figure>
-                    <img src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/noakhali.png" alt="Movie" />
+                    <img src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/quota-protest.png" alt="Movie" />
                 </figure>
                 <div class="card-body lg:w-[522px] md:w-auto">
                     <div class="bg-slate-200 flex gap-2 items-center pl-3  rounded-lg w-32  py-3">
                         <img src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">
-                        <h3><span>600</span>BDT</h3>
+                        <h3><span id="get-total-bdt-2">600</span>BDT</h3>
                     </div>
-                    <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
                     <p class=" text-[#111111B3] "> The recent floods in Noakhali have caused significant damage to homes
                         infrastructure. Your donation will help provide essential supplies and to those affected by this
                         disaster. Every contribution, big or small, makes difference. Please join us in supporting the
                         relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input class="border-2 py-3" type="text" name="" id="" placeholder="Write Donation Amount">
+                    <input class="border-2 py-3" type="text" name="" id="input-get-amount-2" placeholder="Write Donation Amount">
                     <div class="card-actions justify-end">
-                        <button class="btn w-full bg-lime-400">Watch</button>
+                        <button id="donate-now-btn-2" class="btn w-full bg-lime-400">Donate Now</button>
                     </div>
                 </div>
             </div>
         </section>
         <!-- donation card - 3 -->
-        <section class="mt-14 border-2 p-8">
+        <section class="mt-6 border-2 p-8">
             <div class="card flex lg:flex-row md:flex-row sm:flex-col bg-base-100 shadow-xl">
                 <figure>
-                    <img src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/noakhali.png" alt="Movie" />
+                    <img src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/feni.png" alt="Movie" />
                 </figure>
                 <div class="card-body lg:w-[522px] md:w-auto">
                     <div class="bg-slate-200 flex gap-2 items-center pl-3  rounded-lg w-32  py-3">
                         <img src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">
-                        <h3><span>2400</span>BDT</h3>
+                        <h3><span id="get-total-bdt-3">2400</span>BDT</h3>
                     </div>
-                    <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                     <p class=" text-[#111111B3] "> The recent floods in Noakhali have caused significant damage to homes
                         infrastructure. Your donation will help provide essential supplies and to those affected by this
                         disaster. Every contribution, big or small, makes difference. Please join us in supporting the
                         relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input class="border-2 py-3" type="text" name="" id="" placeholder="Write Donation Amount">
+                    <input class="border-2 py-3" type="text" name="" id="input-get-amount-3" placeholder="Write Donation Amount">
                     <div class="card-actions justify-end">
-                        <button class="btn w-full bg-lime-400">Watch</button>
+                        <button id="donate-now-btn-3" class="btn w-full bg-lime-400">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -150,10 +150,10 @@
     <!-- blog section html end -->
     <footer>
         <!-- donation card start -->
-        <div id="Congrates-form" class="hero min-h-screen absolute hidden pt-60">
+        <div id="Congrates-form" class="hero min-h-screen fixed hidden pt-60">
             <div class="hero-overlay bg-opacity-60 relative"></div>
             <div class="hero-content text-neutral-content text-center">
-                <div class="max-w-md bg-white absolute z-30 text-center px-20 py-6">
+                <div class="max-w-md bg-white rounded-xl absolute z-30 text-center px-20 py-6">
                     <h1 class="mb-5 text-4xl font-bold text-slate-950">Congrates!</h1>
                     <img class="flex justify-center mx-auto mb-4"
                         src="B10A5-DOM-Quest-Build-and-Manipulate-main/assets/coin.png" alt="">
@@ -170,8 +170,10 @@
         <!-- donation card end -->
 
         <!-- history card start -->
-        <div id="history-form" class="border-2 w-full mt-96 absolute ">
+        <div id="history-form" class="border-2 py-3 w-full mt-96 absolute hidden">
+            <div id="history-list " class="">
 
+            </div>
         </div>
         <!-- histiry card end -->
     </footer>
