@@ -38,7 +38,8 @@ document.getElementById('donate-now-btn')
             const getCurrentDonationAmount = document.getElementById('get-current-amount').innerText;
             const getCurrentDonationAmountP = parseFloat(getCurrentDonationAmount)
             const B = getCurrentDonationAmountP - inputValueAmountP;
-
+            document.getElementById('input-get-amount').value = '';
+            
             if (B <= 0) {
                 alert('Do not enough Balance! Please earn Money.')
             }
@@ -100,6 +101,7 @@ document.getElementById('donate-now-btn-2')
         const getCurrentDonationAmount = document.getElementById('get-current-amount').innerText;
         const getCurrentDonationAmountP = parseFloat(getCurrentDonationAmount)
         const B = getCurrentDonationAmountP - inputValueAmountP;
+        document.getElementById('input-get-amount-2').value = '';
 
         if (B <= 0) {
             alert('Do not enough Balance! Please earn Money.')
@@ -161,6 +163,7 @@ document.getElementById('donate-now-btn-2')
         const getCurrentDonationAmount = document.getElementById('get-current-amount').innerText;
         const getCurrentDonationAmountP = parseFloat(getCurrentDonationAmount)
         const B = getCurrentDonationAmountP - inputValueAmountP;
+        document.getElementById('input-get-amount-3').value = '';
 
         if (B <= 0) {
             alert('Do not enough Balance! Please earn Money.')
